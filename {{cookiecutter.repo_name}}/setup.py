@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import {{ cookiecutter.app_name }}
 
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
 
-version = '{{ cookiecutter.version }}'
+version = {{ cookiecutter.app_name }}.__version__
 
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
