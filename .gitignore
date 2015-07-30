@@ -24,6 +24,7 @@ pip-log.txt
 # Unit test / coverage reports
 .coverage
 .tox
+htmlcov
 nosetests.xml
 
 # Translations
@@ -47,3 +48,5 @@ output/
 # Virtualenv
 .venv
 
+# Editor
+.idea

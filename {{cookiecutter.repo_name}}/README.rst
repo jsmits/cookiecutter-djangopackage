@@ -30,3 +30,18 @@ Features
 --------
 
 * TODO
+
+Development
+-----------
+
+Install the test requirements::
+
+    $ pip install -r requirements/test.txt
+
+Run the tests to check everything is fine::
+
+    $ ./runtests.sh
+
+To run pylint, do::
+
+    $ ./runpylint.sh
