@@ -36,7 +36,7 @@ Development
 
 Install the test requirements::
 
-    $ pip install -r requirements/test.txt
+    $ pip install -r requirements/dev.txt
 
 Run the tests to check everything is fine::
 
