@@ -39,6 +39,7 @@ coverage: test
 	open htmlcov/index.html
 
 docs:
+	export DJANGO_SETTINGS_MODULE=tests.settings
 	rm -f docs/{{ cookiecutter.repo_name }}.rst
 	rm -f docs/modules.rst
 	sphinx-apidoc -o docs/ {{ cookiecutter.app_name }}
