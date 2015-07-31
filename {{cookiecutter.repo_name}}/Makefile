@@ -23,8 +23,10 @@ clean-pyc:
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 
-lint:
-	flake8 {{ cookiecutter.app_name }} tests --exit-zero
+flake8:
+	flake8 {{ cookiecutter.app_name }} tests --max-complexity 10 --exit-zero
+
+lint: flake8
 	pylint --load-plugins pylint_django -f colorized --rcfile=.pylint.cfg --disable=I0011 -j 4 -r n {{ cookiecutter.app_name }}/ tests/
 
 test:
