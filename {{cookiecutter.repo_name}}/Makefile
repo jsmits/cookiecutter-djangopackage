@@ -24,7 +24,7 @@ clean-pyc:
 	find . -name '*~' -exec rm -f {} +
 
 flake8:
-	flake8 {{ cookiecutter.app_name }} tests --max-complexity 10 --exit-zero
+	flake8 {{ cookiecutter.app_name }} tests --max-complexity 10 --exit-zero --exclude=migrations
 
 lint: flake8
 	pylint --load-plugins pylint_django -f colorized --rcfile=.pylint.cfg --disable=I0011 -j 4 -r n {{ cookiecutter.app_name }}/ tests/

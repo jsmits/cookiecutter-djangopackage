@@ -1,0 +1,3 @@
+[run]
+omit =
+    {{ cookiecutter.app_name }}/migrations/*.py
